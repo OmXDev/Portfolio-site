@@ -1,6 +1,7 @@
 "use client"
 
 import ContactMeModal from "@/components/Contact-Modal"
+import ContactPopup from "@/components/Contact-Popup"
 import { div } from "framer-motion/client"
 import { useState } from "react"
 
@@ -18,11 +19,14 @@ export const Header = () => {
                 <a href="#about" className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300">
                     About
                 </a>
-                <button onClick={() => setIsModalOpen(true)} className="px-4 py-1.5 rounded-full text-gray-900 bg-white text-sm font-semibold hover:bg-white/70 hover:text-gray-900 transition duration-300 cursor-pointer">
+                <button
+                    onClick={() => setIsModalOpen(true)}
+                    className="px-4 py-1.5 rounded-full text-gray-900 bg-white text-sm font-semibold hover:bg-white/70 hover:text-gray-900 transition duration-300 cursor-pointer"
+                >
                     Contact
                 </button>
             </nav>
-            {isModalOpen && <ContactMeModal onClose={() => setIsModalOpen(false)} />}
+            {isModalOpen && <ContactPopup onClose={() => setIsModalOpen(false)} />}
         </div>
     )
 }

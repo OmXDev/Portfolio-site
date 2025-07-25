@@ -7,20 +7,21 @@ import { SingleSparkle } from "@/components/icons/Icon"
 import { HeroOrbit } from "@/components/HeroOrbit"
 import { useState } from "react"
 import ContactMeModal from "@/components/Contact-Modal"
+import ContactPopup from "@/components/Contact-Popup"
 
 export const HeroSection = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
-    
-const handleScrollToProjects = () => {
-  if (typeof window === 'undefined') return; // SSR guard
 
-  const section = document.getElementById('projects');
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  } else {
-    console.warn('Could not find #projects');
-  }
-};
+    const handleScrollToProjects = () => {
+        if (typeof window === 'undefined') return; // SSR guard
+
+        const section = document.getElementById('projects');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            console.warn('Could not find #projects');
+        }
+    };
 
     return (
         <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
@@ -71,7 +72,7 @@ const handleScrollToProjects = () => {
                 <HeroOrbit size={880} rotation={46} shouldOrbit orbitDuration="52s" shouldSpin spinDuration="3s">
                     <SingleSparkle className="size-8 text-emerald-300/20" />
                 </HeroOrbit>
-                
+
             </div>
             <div className="container">
                 <div className="flex flex-col items-center">
@@ -96,21 +97,21 @@ const handleScrollToProjects = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
                     <button
-  onClick={handleScrollToProjects}
-  className="relative inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
->
-  <span className="font-semibold">Explore My Work</span>
-  <ArrowDownIcon className="size-4" />
-</button>
+                        onClick={handleScrollToProjects}
+                        className="relative inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer"
+                    >
+                        <span className="font-semibold">Explore My Work</span>
+                        <ArrowDownIcon className="size-4" />
+                    </button>
 
-                    <button onClick={() => setIsModalOpen(true)} className="relative inline-flex items-center gap-2 border border-white text-gray-900 bg-white h-12 px-6 rounded-xl">
+                    <button onClick={() => setIsModalOpen(true)} className="relative inline-flex items-center gap-2 border border-white text-gray-900 bg-white h-12 px-6 rounded-xl cursor-pointer">
                         <span className="text-2xl">👋 </span>
                         <span className="font-semibold">Let's Connect</span>
                     </button>
                 </div>
 
             </div>
-            {isModalOpen && <ContactMeModal onClose={() => setIsModalOpen(false)} />}
+            {isModalOpen && <ContactPopup onClose={() => setIsModalOpen(false)} />}
         </div>
     )
 }

@@ -60,11 +60,13 @@ export default function ContactMeModal({ onClose }: ContactMeModalProps) {
         </h2>
         <div className="space-y-4 text-center">
           <ContactOption
-            icon={<Mail className="h-6 w-6" />}
-            label="Email"
-            href="mailto:your.email@example.com"
-            
-          />
+  icon={<Mail className="h-6 w-6" />}
+  label="Email"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=omgupta.tech@gmail.com&su=Regarding%20Full-Stack%20Internship&body=Hi%20Om,%0A%0AWe%20recently%20came%20across%20your%20full-stack%20project%20and%20were%20very%20impressed%20by%20the%20quality%20and%20technical%20depth.%0A%0AWe'd%20love%20to%20connect%20and%20discuss%20the%20possibility%20of%20an%20internship%20opportunity%20with%20our%20team.%0A%0APlease%20let%20us%20know%20a%20convenient%20time%20for%20a%20brief%20conversation.%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards,%0A[Your%20Name]"
+  target="_blank"
+  rel="noopener noreferrer"
+/>
+
           <ContactOption
             icon={<Phone className="h-6 w-6" />}
             label="Phone"
@@ -84,7 +86,7 @@ export default function ContactMeModal({ onClose }: ContactMeModalProps) {
           />
 
           <button
-            onClick={() => window.open("https://calendly.com/yourusername/30min", "_blank")}
+            onClick={() => window.open("https://calendly.com/omgupta-tech/30min", "_blank")}
             className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800 transition-all duration-300 ease-in-out transform hover:scale-[1.02] active:scale-[0.98]"
             aria-label="Schedule a call"
           >
@@ -110,9 +112,11 @@ interface ContactOptionProps {
   label: string
   href: string
   external?: boolean
+  target?: string;
+  rel?: string;
 }
 
-function ContactOption({ icon, label,  href, external }: ContactOptionProps) {
+function ContactOption({ icon, label,  href, external}: ContactOptionProps) {
   return (
     <a
       href={href}
