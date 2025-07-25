@@ -89,7 +89,7 @@ export const HeroSection = () => {
                 </div >
                 <div className="max-w-xl mx-auto">
                     <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-                        Hi, I'm Om — I Build Exceptional Full Stack Applications
+                        Hi, I'm Om 👋<br /> I Build Exceptional Full Stack Applications
                     </h1>
                     <p className="mt-4 text-center text-white/60">
                         I'm a full-stack developer skilled in the MERN stack, TypeScript, and Next.js.

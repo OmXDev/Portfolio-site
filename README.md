@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Om's Developer Portfolio 🚀
 
-## Getting Started
+Welcome to my personal developer portfolio — a modern, responsive website built with **Next.js** to showcase my work, skills, and contact information.
 
-First, run the development server:
+🌐 **Live Demo:** [portfolio-site-sand-ten.vercel.app](https://portfolio-site-sand-ten.vercel.app/)
+
+
+
+![Portfolio Preview](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/public/assets/images/PortfolioImage.png)
+
+
+---
+
+## 📌 About the Project
+
+This portfolio highlights my journey as a **Full Stack Developer** skilled in:
+
+- **MERN Stack** (MongoDB, Express, React, Node.js)
+- **TypeScript**
+- **Next.js**
+- UI/UX best practices
+
+It’s designed to be a central point of contact for recruiters and collaborators and includes multiple contact methods and a modern interactive UI.
+
+---
+
+## 🚀 Features
+
+- ⚡ Fast and SEO-optimized with Next.js 13+ (App Router)
+- 🧑‍💻 Projects section to showcase work
+- 📱 Fully responsive for mobile, tablet, and desktop
+- 🎨 Clean, modern UI with Tailwind CSS
+- 💬 Multiple contact options: Discord, Twitter (X), Instagram, WhatsApp, Phone, Calendly, GitHub, Email
+- 📩 Contact modal popup for easy outreach
+- 🌌 Custom hero section with orbiting sparkles and animated effects
+
+---
+
+## 🛠️ Tech Stack
+
+- [Next.js 13+](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Heroicons](https://heroicons.com/)
+- [Vercel](https://vercel.com/) (Deployment)
+
+---
+
+## 📂 Folder Structure (Simplified)
+
+/app
+/components -> Reusable components (Popups, Modals, etc.)
+/public -> Static assets (images, icons)
+/sections-> Sections (Hero, Footer, etc.)
+/pages -> Page routing (if applicable)
+layout.tsx
+page.tsx
+
+
+---
+
+## ⚙️ Getting Started Locally
 
 ```bash
+# Clone the repo
+git clone https://github.com/yourusername/your-portfolio.git
+cd your-portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📬 Feedback & Contribution
+Pull requests, suggestions, and feature ideas are welcome!
+Feel free to fork the repo and contribute.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👤 Author
+OmXDev
+🔗 GitHub Profile
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+MIT License – Feel free to use, modify, and build upon this project.
