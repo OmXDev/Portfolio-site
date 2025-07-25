@@ -74,7 +74,8 @@ export const HeroSection = () => {
                 </HeroOrbit>
 
             </div>
-            <div className="container">
+            <div className="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+
                 <div className="flex flex-col items-center">
                     <Image src={userLaptop} className="size-[100px]" alt="Person peeking from behing laptop" />
                     <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
@@ -88,13 +89,14 @@ export const HeroSection = () => {
                 </div >
                 <div className="max-w-xl mx-auto">
                     <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-                        Building Exceptional Full Stack Applications
+                        Hi, I'm Om — I Build Exceptional Full Stack Applications
                     </h1>
                     <p className="mt-4 text-center text-white/60">
-                        I specialize in crafting robust full-stack applications using modern technologies like React, Node.js, and MongoDB.
-                        Passionate about clean UI, secure APIs, and building features that solve real-world problems.
+                        I'm a full-stack developer skilled in the MERN stack, TypeScript, and Next.js.
+                        I specialize in building fast, secure, and scalable web applications with clean UI, strong architecture, and features that solve real-world problems.
                     </p>
                 </div>
+
                 <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
                     <button
                         onClick={handleScrollToProjects}
