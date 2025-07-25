@@ -6,7 +6,7 @@ Welcome to my personal developer portfolio — a modern, responsive website buil
 
 
 
-![Portfolio Preview](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/public/assets/images/PortfolioImage.png)
+![Portfolio Preview](https://raw.githubusercontent.com/OmXDev/Portfolio-site/main/public/assets/images/PortfolioImage.png)
 
 
 ---
