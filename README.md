@@ -5,7 +5,7 @@ Welcome to my personal developer portfolio — a modern, responsive website buil
 🌐 **Live Demo:** [portfolio-site-sand-ten.vercel.app](https://portfolio-site-sand-ten.vercel.app/)
 
 
-![Portfolio Preview](/assets/images/PortfolioImage.png.png)
+![Portfolio Preview](/assets/PortfolioImage.png.png)
 
 
 ---
