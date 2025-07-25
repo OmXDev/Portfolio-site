@@ -83,7 +83,7 @@ export const HeroSection = () => {
                             <div className="bg-green-500 inset-0 absolute rounded-full animate-ping"></div>
                         </div>
                         <div className=" text-sm font-semibold">
-                            Avaialable for Intern Roles
+                            Available for Intern Roles
                         </div>
                     </div>
                 </div >
