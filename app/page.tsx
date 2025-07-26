@@ -1,3 +1,4 @@
+import ResumeDownloadButton from "@/components/ResumeDownloadButton";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { FooterSection } from "@/sections/Footer";
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <div className="">
         <Header/>
+        <ResumeDownloadButton/>
         <HeroSection/>
         <ProjectsSection/>
         <TapeSection/>
