@@ -3,9 +3,10 @@ import PortfolioImage from '@/public/assests/images/PortfolioImage.png'
 import { ArrowUpRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import GrainImage from '@/public/assests/images/grain.jpg'
-import { SquareArrowOutUpRight } from 'lucide-react';
+import { List, SquareArrowOutUpRight } from 'lucide-react';
 import { GithubIcon } from '@/components/icons/ToolboxIcons';
 import TestimonialImage from '@/public/assests/images/TestimonialImage.png'
+import ListSyncImage from '@/public/assests/images/ListSyncImage.png';
 
 const portfolioProjects = [
   {
@@ -43,6 +44,18 @@ const portfolioProjects = [
     link: "portfolio-site-sand-ten.vercel.app",
     codeLink: "https://github.com/OmXDev/Portfolio-site",
     image: PortfolioImage,
+  },
+  {
+    title: "Agent Task Management",
+    results: [
+    { title: "Secure admin login with JWT authentication" },
+    { title: "Streamlined agent creation and management interface" },
+    { title: "CSV upload with smart, automated task distribution" },
+    { title: "Built with the MERN stack and fully responsive UI" }
+  ],
+    link: "https://list-sync-topaz.vercel.app",
+    codeLink: "https://github.com/OmXDev/ListSync",
+    image: ListSyncImage,
   },
 ];
 
